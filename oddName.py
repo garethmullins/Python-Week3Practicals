@@ -7,10 +7,10 @@ __author__ = 'Gareth'
 def main():
     name = get_name()
     num_of_letters = int(input("Number of letters skipped. ")) + 1
-    method_name(name, num_of_letters)
+    print_name(name, num_of_letters)
 
 
-def method_name(name, num_of_letters):
+def print_name(name, num_of_letters):
     temp = 0
     if num_of_letters == 1:
         for i in name:
