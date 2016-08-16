@@ -5,8 +5,11 @@ __author__ = 'Gareth'
 
 
 def main():
-    score = float(input("Enter score: "))
-    if score < 0 or score < 100:
+    score_to_ranking(float(input("Enter score: ")))
+
+
+def score_to_ranking(score):
+    if score < 0 or score > 100:
         print("Invalid score")
     elif score > 90:
         print("Excellent")
